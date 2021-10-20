@@ -27,5 +27,5 @@ inferTLPs(
 a summary data frame of time-lagged causal pairs
 }
 \description{
-CITL addresses the limitations of the existing methods for inferring time-lagged causal relationships among genes on single-cell RNA sequencing scRNA-seq data. It adopts the changing information of genes estimated by “RNA velocity” for causal inference algorithm. Based on the Time-lagged assumption, CITL can infer time-lagged relationships which are validated by published literature. More information and demonstration is in out article (Wei et al., 2021).Before using CITL, annotations of unspliced/spliced reads could be obtained using velocyto CLI or kallisto first.
+CITL addresses the limitations of the existing methods for inferring time-lagged causal relationships among genes on single-cell RNA sequencing scRNA-seq data. It adopts the changing information of genes estimated by RNA velocity for causal inference algorithm. Based on the Time-lagged assumption, CITL can infer time-lagged relationships which are validated by published literature. More information and demonstration is in out article (Wei et al., 2021).Before using CITL, annotations of unspliced/spliced reads could be obtained using velocyto CLI or kallisto first.
 }
