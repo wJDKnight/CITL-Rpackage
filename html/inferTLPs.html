@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Infer time-lagged causality</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for inferTLPs {CITL}"><tr><td>inferTLPs {CITL}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Infer time-lagged causality</h2>
+
+<h3>Description</h3>
+
+<p>CITL addresses the limitations of the existing methods for inferring time-lagged causal relationships among genes on single-cell RNA sequencing scRNA-seq data. It adopts the changing information of genes estimated by “RNA velocity” for causal inference algorithm. Based on the Time-lagged assumption, CITL can infer time-lagged relationships which are validated by published literature. More information and demonstration is in out article (Wei et al., 2021).Before using CITL, annotations of unspliced/spliced reads could be obtained using velocyto CLI or kallisto first.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+inferTLPs(
+  spliced,
+  velocity,
+  genes = colnames(spliced),
+  n_cluster = 1,
+  maxsx = floor(sqrt(ncol(spliced)))
+)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>spliced</code></td>
+<td>
+<p>a data frame of mRNA expression data. the colname of it is gene names.</p>
+</td></tr>
+<tr valign="top"><td><code>velocity</code></td>
+<td>
+<p>a data frame of velocity data. the colname of it is gene names.</p>
+</td></tr>
+<tr valign="top"><td><code>genes</code></td>
+<td>
+<p>the gene name list</p>
+</td></tr>
+<tr valign="top"><td><code>n_cluster</code></td>
+<td>
+<p>the number of computational threads</p>
+</td></tr>
+<tr valign="top"><td><code>maxsx</code></td>
+<td>
+<p>the maximum allowed size of the conditioning sets used in constructing causal graph</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>a summary data frame of time-lagged causal pairs
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>CITL</em> version 0.1.0 <a href="00Index.html">Index</a>]</div>
+</body></html>

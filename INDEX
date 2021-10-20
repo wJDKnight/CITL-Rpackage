@@ -1,0 +1,8 @@
+all.bn.arcs             all arcs of A-B in bn
+arcs.1.2                arcs of A1-B2 in a bn
+arcs.compare            compare two arcs with no bidirect
+direction.compare       compare two directions
+inferTLPs               Infer time-lagged causality
+rm.bidirect             given a arcs(not a graph), return a no bidirect
+                        arcs and a half bidirect arcs
+test_TLPs               test data for CITL
