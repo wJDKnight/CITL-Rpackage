@@ -7,5 +7,5 @@ Here is the R package of CITL. The command line tool is at https://github.com/wJ
     
     devtools::install_github("wJDKnight/CITL-Rpackage")
   
-  
+  [tutorial](https://wjdknight.github.io/CITL-Rpackage/package_tutorial.html)
 
