@@ -356,7 +356,16 @@ pre code {
 <h2>CITL</h2>
 <p>CITL can infer time-lagged causal relationships between genes from single-cell RNA-sequencing data. It requires two other packages: bnlearn and snow.</p>
 <p>With the data prepared, the basic usage of CITL package is:</p>
-<pre><code>## Warning: package &#39;bnlearn&#39; was built under R version 4.0.5</code></pre>
+<pre class="r"><code>#requirements
+library(bnlearn)
+library(snow)
+
+library(CITL)
+data(&quot;test_TLPs&quot;)
+results=inferTLPs(spliced = test_spliced,
+                  velocity = test_velocity,
+                  genes = test_gene_names,
+                  n_cluster = 4)</code></pre>
 <p>where</p>
 <pre><code>spliced: a data frame of mRNA expression data whose cols represent different genes. 
 velocity: a data frame of RNA velocity data, corresponding to spliced.
