@@ -9,3 +9,6 @@ Here is the R package of CITL. The command line tool is at https://github.com/wJ
   
  # [Tutorial](https://wjdknight.github.io/CITL-Rpackage/package_tutorial.html)
 
+
+# Reference
+Wei et al.(2021), Inferring time-lagged causality using the derivative of single-cell expression
