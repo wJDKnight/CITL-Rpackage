@@ -1,4 +1,6 @@
 # Introduction 
+CITL addresses the limitations of the existing methods for inferring time-lagged causal relationships among genes on single-cell RNA sequencing scRNA-seq data. It adopts the changing information of genes estimated by “RNA velocity” for causal inference algorithm. Based on the Time-lagged assumption, CITL can infer time-lagged relationships which are validated by published literature. More information and demonstration is in out article (Wei et al., 2021).
+
 CITL is running in [R](https://www.r-project.org/), a free software environment for statistical computing. R support a wide variety of UNIX platforms, Windows and MacOS, which means that CITL could run on many platforms. The instruction of installing R is at [here](https://cran.r-project.org/doc/manuals/r-release/R-admin.html).
 
 # CITL-Rpackage
